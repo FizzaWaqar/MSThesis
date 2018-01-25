@@ -22,19 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-<<<<<<< HEAD
         <module name="jts" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jts" target="1.5" />
-=======
-        <module name="JavaJTS" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaJTS" target="1.5" />
->>>>>>> 585d03070d24dd91bc9fd6fa78737bae343ba7ac
     </bytecodeTargetLevel>
   </component>
 </project>
