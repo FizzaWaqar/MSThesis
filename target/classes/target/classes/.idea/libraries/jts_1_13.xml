@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+<component name="libraryTable">
+  <library name="jts-1.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/New folder/jts-1.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+=======
+<component name="libraryTable">
+  <library name="jts-1.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/New folder/jts-1.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+>>>>>>> 585d03070d24dd91bc9fd6fa78737bae343ba7ac
+</component>
