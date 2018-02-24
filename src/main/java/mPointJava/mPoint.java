@@ -7,29 +7,32 @@ import com.vividsolutions.jts.geom.GeometryFactory;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-/**
- * Created by fizza on 1/19/2018.
- */
+
 public class mPoint {
-    int size; //mPoint size
+
     int trid; //mPoint ID
     ArrayList<Double> x; //x-coordinates
     ArrayList<Double> y; //y-coordinates
-    ArrayList<Timestamp> t; //Timestamps
-
+    //ArrayList<Timestamp> t; //Timestamps
+    ArrayList<Double> t; //Timestamps
     ArrayList<Coordinate> cords= new ArrayList<Coordinate>(); //Initializing Coordinate objects Arraylist
 
     GeometryFactory geometryFactory = new GeometryFactory();
 
    //mPoint Constructor
-    public mPoint(int size, int trid, ArrayList<Double> x, ArrayList<Double> y, ArrayList<Timestamp> t) {
-        this.size = size;
+   public mPoint(int trid, ArrayList<Double> x, ArrayList<Double> y) {
+       this.trid = trid;
+       this.x = x;
+       this.y = y;
+   }
+
+    public mPoint(int trid, ArrayList<Double> x, ArrayList<Double> y, ArrayList<Double> t) {
         this.trid = trid;
         this.x = x;
         this.y = y;
         this.t = t;
     }
-
+/*
     public ArrayList<Timestamp> getT() {
         return t;
     }
@@ -51,14 +54,18 @@ public class mPoint {
         this.y = y;
     }
 
-    public int getSize() {
-        return size;
-    }
 
+*/
     public int getTrid() {
         return trid;
     }
 
+    public void print() {
+        for(int i = 0; i < x.size(); i++) {
+            System.out.println("x- cord " + x.get(i) + " , " + " y-cord " +y.get(i));
+        }
+    }
+/*
 
 
     Coordinate[] temp = new Coordinate[this.getSize()];
@@ -73,6 +80,6 @@ public class mPoint {
         LineString lineString = geometryFactory.createLineString(cords.toArray(temp)); //creating linestrings
         return lineString;
     }
-
+*/
 }
 
